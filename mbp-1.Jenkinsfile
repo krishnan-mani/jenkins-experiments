@@ -1,10 +1,8 @@
 pipeline {
 
-    stages {
+    node('foo') {
       stage('hi') {
-        steps {
-          sh "echo hi"
-        } 
+          echo hi
       }
     }
 }
