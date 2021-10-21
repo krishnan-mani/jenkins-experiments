@@ -1,8 +1,11 @@
 pipeline {
+    agent any
 
-    node('foo') {
+    stages {
       stage('hi') {
-          echo hi
+        steps {
+          sh "echo hi"
+        } 
       }
     }
 }
