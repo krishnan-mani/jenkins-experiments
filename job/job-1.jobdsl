@@ -3,6 +3,6 @@ job('job-1') {
     github('krishnan-mani/jenkins-experiments', 'main')
   }
   steps {
-    shell('echo hi')
-    shell("export PATH=$PATH:$WORKSPACE/bin/foo && foo")
+    shell("export PATH=$PATH:$WORKSPACE/bin && foo")
+  }
 }
