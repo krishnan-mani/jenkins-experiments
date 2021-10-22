@@ -1,0 +1,16 @@
+multibranchPipelineJob('mbp-1') {
+  branchSources {
+    github {
+      id('mbp-1')
+      repoOwner('krishnan-mani')
+      repository('jenkins-experiments')
+    }
+  }
+
+  factory {
+    workflowBranchProjectFactory {
+      scriptPath('mbp/mbp-1.Jenkinsfile')
+    }
+  }
+
+}
