@@ -2,4 +2,7 @@ job('job-1') {
   scm {
     github('krishnan-mani/jenkins-experiments', 'main')
   }
+  steps {
+    shell('echo hi')
+  }
 }
